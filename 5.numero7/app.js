@@ -1,6 +1,4 @@
- const selectEstado = document.querySelector("#estados");
- const selectMunicipio = document.querySelector("#municipios");
- const soloNumero = document.querySelector(".solo-numero");
+
  const numero_7 = document.querySelector("#numero_7");
 
  const mensaje_tecla7 = (event) => { 

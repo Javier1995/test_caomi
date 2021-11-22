@@ -9,9 +9,9 @@
 
     $sql = "SELECT * FROM c_mensaje7 LIMIT 1";
 
-    $municipios = $db->prepare($sql);
-    if($municipios->execute()){
-      array_push($data['success']['data'] , $municipios->fetchAll(PDO::FETCH_ASSOC));
+    $numero_7 = $db->prepare($sql);
+    if($numero_7->execute()){
+      array_push($data['success']['data'] , $numero_7->fetchAll(PDO::FETCH_ASSOC));
       http_response_code(201);
     } else {
       array_push($data['error'] ,'Error al cargar los datos');
